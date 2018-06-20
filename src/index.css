@@ -1,5 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Shrikhand");
+/*    
+600-900: tablet in portrait
+900-1200: tablet in landscape
+[1200-1800] is where our normal styles apply
+1800+: big desktop
+
+ choices for breakpoint argument:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+1em = 16px
+
+
+ORDER:  base+typography > gen layout + grid > page layout > components
+
+ */
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  min-height: 100%; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
