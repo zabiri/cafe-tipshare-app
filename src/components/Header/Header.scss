@@ -1,0 +1,43 @@
+.Header {
+    background-image: url('../../assets/img/cafefront.jpg');
+    background-size: cover;
+
+    background-color: rgb(107, 107, 107); // display: inline-block;
+    position: relative;
+    width: 100%;
+    font-family: Shrikhand, serif;
+    
+    color: white;
+    text-shadow: 1vh 1vh 4vh #000, -.1rem -.1rem .9rem #000;
+    box-shadow: 0vh .5vh 2vh #00000060;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &__text-block {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    &__title {
+        text-align: center;
+        font-size: 14vw;
+        margin: 1rem 0 1rem 0;
+        font-weight: 500;
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: 7vw;
+        margin: 1rem 0 1rem 0;
+        font-weight: 500;
+    }
+    &__logo {
+        width: 23vw;
+        filter: drop-shadow(0vh 2vh 1.5vh black);
+        transition: all 200ms ease-in-out;
+        backface-visibility: hidden;
+        &:hover {
+            transform: translateY(-.4rem);
+            transform: scale(1.05);
+            filter: drop-shadow(0vh 2.5vh 2vh black);
+        }
+    }
+}
