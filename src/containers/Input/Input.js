@@ -1,30 +1,36 @@
 import React, { Component } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import MonWed from '../../components/MonWed/MonWed'
+import ThursFri from '../../components/ThursFri/ThursFri'
+import SatSun from '../../components/SatSun/SatSun'
+
 import './Input.css'
 
 export class Input extends Component {
-  render() {
-    return (
-      <Tabs>
-    <TabList>
-      <Tab>Monday-Wednesday</Tab>
-      <Tab>Thursday-Friday</Tab>
-      <Tab>Saturday-Sunday</Tab>
-    </TabList>
-
-    <TabPanel>
-      <h2>Monday through wednesday content</h2>
-    </TabPanel>
-    <TabPanel>
-      <h2>Thursday friday content</h2>
-    </TabPanel>
-    <TabPanel>
-      <h2>Saturday sunday content</h2>
-    </TabPanel>
-  </Tabs>
-    )
-  }
+    render() {
+        return (
+            <div className="Input">
+                <Tabs>
+                    <TabList>
+                        <Tab>Mon-Wed</Tab>
+                        <Tab>Thurs-Fri</Tab>
+                        <Tab>Sat-Sun</Tab>
+                    </TabList>
+    
+                    <TabPanel>
+                        <MonWed />
+                    </TabPanel>
+                    <TabPanel>
+                        <ThursFri />
+                    </TabPanel>
+                    <TabPanel>
+                        <SatSun />
+                    </TabPanel>
+                </Tabs>
+            </div>
+        )
+    }
 }
 
 export default Input

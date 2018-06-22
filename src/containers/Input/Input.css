@@ -1,39 +1,44 @@
-.react-tabs__tab-list {
-  border-bottom: 1px solid #aaa;
-  margin: 0 0 10px;
-  padding: 0; }
+.Input {
+  padding-top: 0.2rem; }
 
-.react-tabs__tab {
-  display: inline-block;
-  border: 1px solid transparent;
-  border-bottom: none;
-  bottom: -1px;
-  position: relative;
-  list-style: none;
-  padding: 6px 12px;
-  cursor: pointer; }
-  .react-tabs__tab--selected {
-    background: #fff;
-    border-color: #aaa;
-    color: black;
-    border-radius: 5px 5px 0 0; }
-  .react-tabs__tab--disabled {
-    color: GrayText;
-    cursor: default; }
-  .react-tabs__tab:focus {
-    box-shadow: 0 0 5px #0188fe;
-    border-color: #0188fe;
-    outline: none; }
-    .react-tabs__tab:focus:after {
-      content: "";
-      position: absolute;
-      height: 5px;
-      left: -4px;
-      right: -4px;
-      bottom: -5px;
-      background: #fff; }
-
-.react-tabs__tab-panel {
-  display: none; }
-  .react-tabs__tab-panel--selected {
-    display: block; }
+.react-tabs {
+  font-family: Roboto, sans-serif; }
+  .react-tabs__tab-list {
+    text-align: center;
+    border-bottom: .1rem solid #aaa;
+    margin: 0 0 1rem;
+    padding: 0; }
+  .react-tabs__tab {
+    font-size: 2.5vw;
+    display: inline-block;
+    border: .2rem solid transparent;
+    border-bottom: none;
+    bottom: -0.1rem;
+    position: relative;
+    list-style: none;
+    padding: .6rem 8vw;
+    cursor: pointer; }
+    .react-tabs__tab--selected {
+      background: #fff;
+      border-color: #aaa;
+      color: black;
+      border-radius: 0.5rem 0.5rem 0 0; }
+    .react-tabs__tab--disabled {
+      color: GrayText;
+      cursor: default; }
+    .react-tabs__tab:focus {
+      box-shadow: 0 0 5px #0188fe;
+      border-color: #0188fe;
+      outline: none; }
+      .react-tabs__tab:focus:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff; }
+  .react-tabs__tab-panel {
+    display: none; }
+    .react-tabs__tab-panel--selected {
+      display: block; }
