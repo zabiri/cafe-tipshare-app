@@ -17,6 +17,7 @@
     position: relative;
     list-style: none;
     padding: .6rem 8vw;
+    transition: all 100ms ease-in;
     cursor: pointer; }
     .react-tabs__tab--selected {
       background: #fff;
