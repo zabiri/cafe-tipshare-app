@@ -11,7 +11,7 @@ export class Input extends Component {
     state = {
         grossTips: 0,
         clockOut: null,
-        
+
     }
     render() {
         return (
@@ -23,6 +23,7 @@ export class Input extends Component {
                         <Tab>Sat-Sun</Tab>
                     </TabList>
                     <div className="Input__panels">
+
                         <TabPanel>
                             <MonWed />
                         </TabPanel>

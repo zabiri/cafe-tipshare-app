@@ -1,35 +1,51 @@
 .Input {
-    padding-top: 0.2rem;
+    font-size: 1.2rem; 
+    margin: auto;
+    padding-top: 1rem;
+    width: 50%;
+    min-width: 23rem;
     &__panels {
-        width: 50%;
+        background-color: white;
+
+        padding: 1.5rem;
         margin: auto;
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
     }
+    /* On mouse-over, add a deeper shadow */
 }
 
 .react-tabs {
+
     font-family: Roboto, sans-serif;
-    
     &__tab-list {
         text-align: center;
-        border-bottom: .1rem solid #aaa;
-        margin: 0 0 1rem;
+        // border-bottom: .1rem solid #aaa;
+        margin: 0 0 0;
         padding: 0;
     }
     &__tab {
-        font-size: 2.5vw;
         // font-weight: bold;
         display: inline-block;
-        border: .2rem solid transparent;
+        width: 32.3%;
+        border: .1rem solid transparent;
         border-bottom: none;
         bottom: -0.1rem;
         position: relative;
         list-style: none;
-        padding: .6rem 8vw;
+        padding: .6rem 0;
         transition: all 100ms ease-in;
         cursor: pointer;
+        position: relative;
+        z-index: 99;
         &--selected {
+
             background: #fff;
-            border-color: #aaa;
+            border-color: #aaaaaa50;
             color: black;
             border-radius: 0.5rem 0.5rem 0 0;
         }
@@ -37,7 +53,6 @@
             color: GrayText;
             cursor: default;
         }
-    
         &:focus {
             box-shadow: 0 0 5px hsl(208, 99%, 50%);
             border-color: hsl(208, 99%, 50%);
@@ -54,9 +69,14 @@
         }
     }
     &__tab-panel {
+
         display: none;
         &--selected {
             display: block;
         }
     }
+}
+.inputLabel {
+    display: block;
+    padding: 1rem 0 1rem 0;
 }

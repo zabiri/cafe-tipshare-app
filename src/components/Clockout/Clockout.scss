@@ -1,6 +1,7 @@
 .rc-time-picker {
     display: inline-block;
     box-sizing: border-box;
+    width: 100%;
   }
   .rc-time-picker * {
     box-sizing: border-box;
@@ -14,7 +15,7 @@
     cursor: text;
     font-size: 12px;
     line-height: 1.5;
-    color: #666;
+    color: #000;
     background-color: #fff;
     background-image: none;
     border: 1px solid #d9d9d9;
@@ -151,9 +152,4 @@
   li.rc-time-picker-panel-select-option-disabled:hover {
     background: transparent;
     cursor: not-allowed;
-  }
-  .inputLabel {
-      display: block;
-      font-size: 1.2rem;
-      padding: 1rem 0 1rem 0;
   }

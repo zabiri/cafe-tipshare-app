@@ -15,17 +15,22 @@
     display: inline-block;
     width: 100%; }
   .Header__title {
+    position: relative;
+    z-index: 10;
     text-align: center;
-    font-size: 14vw;
-    margin: 1rem 0 1rem 0;
+    font-size: 7vw;
+    margin: .5rem 0;
     font-weight: 500; }
   .Header__subtitle {
     text-align: center;
-    font-size: 7vw;
+    font-size: 5vw;
     margin: 1rem 0 1rem 0;
     font-weight: 500; }
   .Header__logo {
-    width: 23vw;
+    position: relative;
+    z-index: 9;
+    width: 15vw;
+    min-width: 8rem;
     filter: drop-shadow(0vh 2vh 1.5vh black);
     transition: all 200ms ease-in-out;
     backface-visibility: hidden; }
