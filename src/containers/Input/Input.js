@@ -22,16 +22,17 @@ export class Input extends Component {
                         <Tab>Thurs-Fri</Tab>
                         <Tab>Sat-Sun</Tab>
                     </TabList>
-    
-                    <TabPanel>
-                        <MonWed />
-                    </TabPanel>
-                    <TabPanel>
-                        <ThursFri />
-                    </TabPanel>
-                    <TabPanel>
-                        <SatSun />
-                    </TabPanel>
+                    <div className="Input__panels">
+                        <TabPanel>
+                            <MonWed />
+                        </TabPanel>
+                        <TabPanel>
+                            <ThursFri />
+                        </TabPanel>
+                        <TabPanel>
+                            <SatSun />
+                        </TabPanel>
+                    </div>
                 </Tabs>
             </div>
         )

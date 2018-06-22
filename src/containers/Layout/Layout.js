@@ -11,7 +11,7 @@ class Layout extends Component {
       <Fragment>
         <Header/>
         <Input/>
-        <Output/>
+
       </Fragment>
     )
   }

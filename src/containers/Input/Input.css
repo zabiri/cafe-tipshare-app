@@ -1,5 +1,8 @@
 .Input {
   padding-top: 0.2rem; }
+  .Input__panels {
+    width: 50%;
+    margin: auto; }
 
 .react-tabs {
   font-family: Roboto, sans-serif; }

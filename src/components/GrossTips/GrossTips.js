@@ -1,10 +1,11 @@
 import React from 'react'
+import './GrossTips.css'
 
 const GrossTips = () => {
     return (
         <div>
-            <label htmlFor="grosstips">Gross tips:</label>
-            <input type="tel" name="grosstips" placeholder="Gross tips" />
+            <label className="inputLabel" htmlFor="grosstips">Gross tips:</label>
+            <input className="grossInput" type="tel" name="grosstips" placeholder="Enter Gross tips" />
         </div>
     )
 }

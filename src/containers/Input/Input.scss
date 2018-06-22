@@ -1,5 +1,9 @@
 .Input {
     padding-top: 0.2rem;
+    &__panels {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .react-tabs {
