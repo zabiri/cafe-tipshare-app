@@ -8,11 +8,7 @@ import SatSun from '../../components/SatSun/SatSun'
 import './Input.css'
 
 export class Input extends Component {
-    state = {
-        grossTips: 0,
-        clockOut: null,
-
-    }
+    
     render() {
         return (
             <div className="Input">

@@ -1,0 +1,3 @@
+export const CHANGE_HOURS = 'CHANGE_HOURS'
+export const CHANGE_GROSS = 'CHANGE_GROSS'
+export const TOGGLE_PATIO = 'TOGGLE_PATIO'
