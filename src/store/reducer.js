@@ -13,12 +13,18 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   //if statements or switch cases that immutably update the state like so:
-  switch (action) {
+  switch (action.type) {
     case actionTypes.TOGGLE_PATIO:
       return {
         ...state,
         isPatio: !state.isPatio
       };
+    case actionTypes.CHANGE_GROSS:
+    console.log(action.gross)
+      return {
+          ...state,
+          grossTips: action.gross
+      }
     default: return state;
   }
 };

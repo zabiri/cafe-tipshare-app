@@ -27,6 +27,10 @@ export class MonWed extends Component {
       .asHours();
     console.log(`I worked ${hours} hours, loretta worked ${lateHours}`);
   };
+
+  onChangeGross = event => {
+    this.props.onChangeGross(event.target.value);
+  };
   render() {
     return (
       <div>
@@ -63,7 +67,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onChangeGross: gross =>
-      dispatch({ type: actionTypes.CHANGE_GROSS, grossTips: gross }),
+      dispatch({ type: actionTypes.CHANGE_GROSS, gross: gross }),
     onChangeHours: hours =>
       dispatch({ type: actionTypes.CHANGE_HOURS, hours: hours })
   };
