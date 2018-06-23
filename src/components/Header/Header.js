@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import cafelogo from '../../assets/img/cafelogo.png' 
-import Input from '../../containers/Input/Input'
+
 const Header = () => {
   return (
     <header className="Header">
