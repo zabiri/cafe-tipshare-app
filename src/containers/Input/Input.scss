@@ -30,6 +30,7 @@
     }
     &__tab {
         // font-weight: bold;
+        font-size: 1.4rem;
         display: inline-block;
         width: 32.3%;
         border: .1rem solid transparent;
@@ -37,7 +38,7 @@
         bottom: -0.1rem;
         position: relative;
         list-style: none;
-        padding: .6rem 0;
+        padding: .9rem 0;
         transition: all 100ms ease-in;
         cursor: pointer;
         position: relative;
