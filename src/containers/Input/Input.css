@@ -10,7 +10,7 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: -0.4rem;
+    margin-bottom: -0.7rem;
     border-radius: 3px; }
     .Input__tabs-radio {
       display: none; }
@@ -46,6 +46,9 @@
   .Input__panels {
     background-color: white;
     display: relative;
+    border: solid .1rem #00000030;
+    border-right: none;
+    border-top: none;
     padding: 1.5rem;
     margin: auto;
     /* Add shadows to create the "card" effect */
@@ -59,6 +62,9 @@
 #toggle-tab3:checked ~ label[for="toggle-tab3"],
 #toggle-tab4:checked ~ label[for="toggle-tab4"] {
   background: white;
+  border: solid .1rem #00000030;
+  border-right: none;
+  border-top: none;
   margin-bottom: 0;
   position: relative;
   z-index: -1;

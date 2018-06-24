@@ -8,10 +8,10 @@
   &__tabs {
     position: relative;
     text-align: center;
-
+    // border-bottom: solid .1rem #00000030;
     margin: 0 auto;
     // margin-top: ;
-    margin-bottom: -0.4rem;
+    margin-bottom: -0.7rem;
     border-radius: 3px;
     &-radio {
       display: none;
@@ -65,7 +65,9 @@
   &__panels {
     background-color: white;
     display: relative;
-
+    border: solid .1rem #00000030;
+    border-right: none;
+    border-top: none;
     padding: 1.5rem;
     margin: auto;
     /* Add shadows to create the "card" effect */
@@ -83,6 +85,9 @@
 #toggle-tab3:checked ~ label[for="toggle-tab3"],
 #toggle-tab4:checked ~ label[for="toggle-tab4"] {
   background: white;
+  border: solid .1rem #00000030;
+  border-right: none;
+  border-top: none;
   margin-bottom: 0;
   position: relative;
   z-index: -1;
