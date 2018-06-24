@@ -1,12 +1,51 @@
 .Input {
+  font-family: Roboto;
   font-size: 1.2rem;
   margin: auto;
   padding-top: 1rem;
   width: 50%;
   min-width: 23rem;
   /* On mouse-over, add a deeper shadow */ }
+  .Input__tabs {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -0.4rem;
+    border-radius: 3px; }
+    .Input__tabs-radio {
+      display: none; }
+    .Input__tabs-label {
+      font-size: 1.4rem;
+      display: inline-block;
+      width: 24%;
+      border: 0.1rem solid transparent;
+      border-radius: 10px;
+      border-bottom: none;
+      bottom: -0.1rem;
+      position: relative;
+      list-style: none;
+      padding: 0.9rem 0;
+      transition: all 100ms ease-in;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      transition: color 0.3s; }
+      .Input__tabs-label:hover {
+        color: #707070; }
+      .Input__tabs-label:focus {
+        box-shadow: 0 0 5px #0188fe;
+        border-color: #0188fe;
+        outline: none; }
+        .Input__tabs-label:focus:after {
+          content: "";
+          position: absolute;
+          height: 5px;
+          left: -4px;
+          right: -4px;
+          bottom: -5px;
+          background: #fff; }
   .Input__panels {
     background-color: white;
+    display: relative;
     padding: 1.5rem;
     margin: auto;
     /* Add shadows to create the "card" effect */
@@ -15,50 +54,20 @@
     .Input__panels:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
-.react-tabs {
-  font-family: Roboto, sans-serif; }
-  .react-tabs__tab-list {
-    text-align: center;
-    margin: 0 0 0;
-    padding: 0; }
-  .react-tabs__tab {
-    font-size: 1.4rem;
-    display: inline-block;
-    width: 24%;
-    border: .1rem solid transparent;
-    border-bottom: none;
-    bottom: -0.1rem;
-    position: relative;
-    list-style: none;
-    padding: .9rem 0;
-    transition: all 100ms ease-in;
-    cursor: pointer;
-    position: relative;
-    z-index: 99; }
-    .react-tabs__tab--selected {
-      background: #fff;
-      border-color: #aaaaaa50;
-      color: black;
-      border-radius: 0.5rem 0.5rem 0 0; }
-    .react-tabs__tab--disabled {
-      color: GrayText;
-      cursor: default; }
-    .react-tabs__tab:focus {
-      box-shadow: 0 0 5px #0188fe;
-      border-color: #0188fe;
-      outline: none; }
-      .react-tabs__tab:focus:after {
-        content: "";
-        position: absolute;
-        height: 5px;
-        left: -4px;
-        right: -4px;
-        bottom: -5px;
-        background: #fff; }
-  .react-tabs__tab-panel {
-    display: none; }
-    .react-tabs__tab-panel--selected {
-      display: block; }
+#toggle-tab1:checked ~ label[for="toggle-tab1"],
+#toggle-tab2:checked ~ label[for="toggle-tab2"],
+#toggle-tab3:checked ~ label[for="toggle-tab3"],
+#toggle-tab4:checked ~ label[for="toggle-tab4"] {
+  background: white;
+  margin-bottom: 0;
+  position: relative;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: 18px;
+  color: black;
+  cursor: default; }
 
 .inputLabel {
   display: block;

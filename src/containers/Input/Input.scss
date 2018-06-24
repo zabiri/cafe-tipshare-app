@@ -1,84 +1,101 @@
 .Input {
-    font-size: 1.2rem; 
+  font-family: Roboto;
+  font-size: 1.2rem;
+  margin: auto;
+  padding-top: 1rem;
+  width: 50%;
+  min-width: 23rem;
+  &__tabs {
+    position: relative;
+    text-align: center;
+
+    margin: 0 auto;
+    // margin-top: ;
+    margin-bottom: -0.4rem;
+    border-radius: 3px;
+    &-radio {
+      display: none;
+    }
+    &-label {
+      font-size: 1.4rem;
+      display: inline-block;
+      width: 24%;
+      border: 0.1rem solid transparent;
+      border-radius: 10px;
+      border-bottom: none;
+      bottom: -0.1rem;
+      position: relative;
+      list-style: none;
+      padding: 0.9rem 0;
+      transition: all 100ms ease-in;
+      //   background: #e9e9e9;
+      //   display: inline-block;
+      //   margin-right: 2px;
+      //   border-radius: 3px;
+      //   padding: 14px 20px;
+
+      //   font-size: 95%;
+      //   font-weight: 700;
+      //   color: #777;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      transition: color 0.3s;
+   
+      &:hover {
+        
+        color: #707070;
+      }
+      &:focus {
+        box-shadow: 0 0 5px hsl(208, 99%, 50%);
+        border-color: hsl(208, 99%, 50%);
+        outline: none;
+        &:after {
+          content: "";
+          position: absolute;
+          height: 5px;
+          left: -4px;
+          right: -4px;
+          bottom: -5px;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  &__panels {
+    background-color: white;
+    display: relative;
+
+    padding: 1.5rem;
     margin: auto;
-    padding-top: 1rem;
-    width: 50%;
-    min-width: 23rem;
-    &__panels {
-        background-color: white;
-
-        padding: 1.5rem;
-        margin: auto;
-        /* Add shadows to create the "card" effect */
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        &:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-    /* On mouse-over, add a deeper shadow */
+  }
+  /* On mouse-over, add a deeper shadow */
 }
 
-.react-tabs {
+#toggle-tab1:checked ~ label[for="toggle-tab1"],
+#toggle-tab2:checked ~ label[for="toggle-tab2"],
+#toggle-tab3:checked ~ label[for="toggle-tab3"],
+#toggle-tab4:checked ~ label[for="toggle-tab4"] {
+  background: white;
+  margin-bottom: 0;
+  position: relative;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-    font-family: Roboto, sans-serif;
-    &__tab-list {
-        text-align: center;
-        // border-bottom: .1rem solid #aaa;
-        margin: 0 0 0;
-        padding: 0;
-    }
-    &__tab {
-        // font-weight: bold;
-        font-size: 1.4rem;
-        display: inline-block;
-        width: 24%;
-        border: .1rem solid transparent;
-        border-bottom: none;
-        bottom: -0.1rem;
-        position: relative;
-        list-style: none;
-        padding: .9rem 0;
-        transition: all 100ms ease-in;
-        cursor: pointer;
-        position: relative;
-        z-index: 99;
-        &--selected {
-
-            background: #fff;
-            border-color: #aaaaaa50;
-            color: black;
-            border-radius: 0.5rem 0.5rem 0 0;
-        }
-        &--disabled {
-            color: GrayText;
-            cursor: default;
-        }
-        &:focus {
-            box-shadow: 0 0 5px hsl(208, 99%, 50%);
-            border-color: hsl(208, 99%, 50%);
-            outline: none;
-            &:after {
-                content: "";
-                position: absolute;
-                height: 5px;
-                left: -4px;
-                right: -4px;
-                bottom: -5px;
-                background: #fff;
-            }
-        }
-    }
-    &__tab-panel {
-
-        display: none;
-        &--selected {
-            display: block;
-        }
-    }
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: 18px;
+  color: black;
+  cursor: default;
 }
+
 .inputLabel {
-    display: block;
-    padding: 1rem 0;
+  display: block;
+  padding: 1rem 0;
 }
-
