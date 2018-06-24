@@ -7,7 +7,7 @@ const GrossTips = (props) => {
         <label className="inputLabel" htmlFor="grosstips">
           Gross tips:
         </label>
-        <input className="grossInput" type="tel" name="grosstips" onChange={props.changeGross} placeholder="Enter Gross tips" />
+        <input className="grossInput" type="tel" name="grosstips" value={props.gross} onChange={props.changeGross} placeholder="Enter Gross tips" />
       </div>;
 }
 
