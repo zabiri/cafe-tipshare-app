@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     background: #fcfff4;
-    background: linear-gradient(#fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(hsl(0, 0, 100%) 0%, hsl(0, 0, 95%) 100%);
     border-radius: 4px;
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
     &:after {
