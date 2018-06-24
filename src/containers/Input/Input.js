@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import MonWed from '../../components/MonWed/MonWed'
-import ThursFri from '../../components/ThursFri/ThursFri'
+import Thurs from '../../components/Thurs/Thurs'
+import Fri from '../../components/Fri/Fri'
 import SatSun from '../../components/SatSun/SatSun'
 
 import './Input.css'
@@ -14,8 +15,9 @@ export class Input extends Component {
             <div className="Input">
                 <Tabs>
                     <TabList>
-                        <Tab>Mon-Wed</Tab>
-                        <Tab>Thurs-Fri</Tab>
+                        <Tab>MTW</Tab>
+                        <Tab>Thurs</Tab>
+                        <Tab>Fri</Tab>
                         <Tab>Sat-Sun</Tab>
                     </TabList>
                     <div className="Input__panels">
@@ -24,7 +26,10 @@ export class Input extends Component {
                             <MonWed />
                         </TabPanel>
                         <TabPanel>
-                            <ThursFri />
+                            <Thurs />
+                        </TabPanel>
+                        <TabPanel>
+                            <Fri />
                         </TabPanel>
                         <TabPanel>
                             <SatSun />

@@ -25,7 +25,8 @@ export class MonWed extends Component {
     let lateHours = moment
       .duration(moment(event, format).diff(moment(lateStartTime, format)))
       .asHours();
-    console.log(`I worked ${hours} hours, loretta worked ${lateHours}`);
+
+    this.props.onChangeHours(hours, lateHours);
   };
 
   onChangeGross = event => {
@@ -35,7 +36,7 @@ export class MonWed extends Component {
     return (
       <div>
         <p>
-          On Mondays, there are no silverware rollers or support staff. Also,
+          On Mondays-Wednesdays, there are no silverware rollers or support staff. Also,
           one of the three servers arrives at 9:00 am instead of 7:30 am.
         </p>
         <GrossTips
@@ -46,7 +47,8 @@ export class MonWed extends Component {
         <Output
           days="isMon"
           grossTips={this.props.grossTips}
-          hourly={this.props.hourly}
+          hours={this.props.hours}
+          lateHours={this.props.lateHours}
         />
       </div>
     );
@@ -56,11 +58,8 @@ export class MonWed extends Component {
 const mapStateToProps = state => {
   return {
     grossTips: state.grossTips,
-    hourly: state.hourly,
-    lateHours: state.lateHours,
-    shiftLength: state.shiftLength,
-    tipsPer: state.tipsPer,
-    totalHours: state.totalHours
+    hours: state.hours,
+    lateHours: state.lateHours
   };
 };
 
@@ -68,8 +67,8 @@ const mapDispatchToProps = dispatch => {
   return {
     onChangeGross: gross =>
       dispatch({ type: actionTypes.CHANGE_GROSS, gross: gross }),
-    onChangeHours: hours =>
-      dispatch({ type: actionTypes.CHANGE_HOURS, hours: hours })
+    onChangeHours: (hours, lateHours) =>
+      dispatch({ type: actionTypes.CHANGE_HOURS, hours: hours, lateHours: lateHours})
   };
 };
 
