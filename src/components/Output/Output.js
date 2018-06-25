@@ -5,8 +5,8 @@ const Output = props => {
   let split = 3;
   let payRate = 0;
   let supportTips = 0;
-  switch (props.days) {
-    case "isMon":
+  switch (props.day) {
+    case "MTW":
       let totalHours = props.hours * 2 + props.lateHours;
       payRate = (props.grossTips / totalHours).toFixed(2);
       let earlyTips = (payRate * props.hours).toFixed(2);
@@ -22,7 +22,7 @@ const Output = props => {
       );
 
       break;
-    case "isThurs":
+    case "Thursday":
       supportTips = props.grossTips * 0.1;
       split = (props.grossTips - supportTips) / 3;
       content = (
@@ -35,7 +35,7 @@ const Output = props => {
       );
 
       break;
-    case "isFri":
+    case "Friday":
       supportTips = props.grossTips * 0.1;
       split = (props.grossTips - supportTips) / 4;
       content = (
@@ -48,7 +48,7 @@ const Output = props => {
       );
 
       break;
-    case "isWeekend":
+    case "Weekend":
       let serverNumber = props.patio ? 5 : 4;
       supportTips = props.grossTips * 0.15;
       split = (props.grossTips - supportTips - 65) / serverNumber;

@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import MonWed from "../../components/MonWed/MonWed";
-import Thurs from "../../components/Thurs/Thurs";
-import Fri from "../../components/Fri/Fri";
-import SatSun from "../../components/SatSun/SatSun";
+import Day from '../../components/Day/Day'
 
 import "./Input.css";
 
 export class Input extends Component {
   state = {
-    checkedRadio: "option2"
+    checkedRadio: "option1"
   };
   onTabChange = event => {
     this.setState({
@@ -19,16 +16,16 @@ export class Input extends Component {
     let content = null;
     switch (this.state.checkedRadio) {
       case "option1":
-        content = <MonWed />;
+        content = <Day day="MTW"/>;
         break;
       case "option2":
-        content = <Thurs />;
+        content = <Day day="Thursday" />;
         break;
       case "option3":
-        content = <Fri />;
+        content = <Day day="Friday" />;
         break;
       case "option4":
-        content = <SatSun />;
+        content = <Day day="Weekend" />;
         break;
         default: return null
     }
