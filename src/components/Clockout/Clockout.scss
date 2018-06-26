@@ -1,5 +1,6 @@
 @import "../../sass/main.scss";
 .TimePicker__glyph {
+  color: rgb(94, 94, 253);
   position: absolute;
   transform: translate(0.7rem, 0.9rem);
   @include respond(tab-land){

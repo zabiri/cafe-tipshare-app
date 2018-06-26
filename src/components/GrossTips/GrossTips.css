@@ -352,7 +352,8 @@ ORDER:  base+typography > gen layout + grid > page layout > components
       .grossInput__moneySign {
         transform: translate(0, 0rem); } }
   .grossInput__moneyGlyph {
-    transform: translate(0, 0.1rem); }
+    transform: translate(0, 0.1rem);
+    color: #09c009; }
     @media only screen and (max-width: 75em) {
       .grossInput__moneyGlyph {
         transform: translate(0, 0rem); } }

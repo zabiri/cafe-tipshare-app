@@ -316,6 +316,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 
  */
 .TimePicker__glyph {
+  color: #5e5efd;
   position: absolute;
   transform: translate(0.7rem, 0.9rem);
   z-index: 1; }

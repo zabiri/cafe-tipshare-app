@@ -42,6 +42,7 @@
   }
   &__moneyGlyph {
     transform: translate(0, .1rem);
+    color: rgb(9, 192, 9);
     @include respond(tab-land){
         transform: translate(0, 0rem);
     }
