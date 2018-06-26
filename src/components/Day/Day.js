@@ -83,7 +83,8 @@ const Day = props => {
   }
   return (
     <div className="Day">
-      <p>{dayBlock.description}</p>
+      <p className="Day__description">{dayBlock.description}</p>
+      <hr/>
       <GrossTips changeGross={grossHandler} gross={props.grossTips} />
       {dayBlock.extraJSX}
       <Output

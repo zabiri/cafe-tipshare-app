@@ -8,7 +8,7 @@ const Output = props => {
       get earlyTips() { return (this.payRate * props.hours).toFixed(2); },
       get lateTips() { return (this.payRate * props.lateHours).toFixed(2); },
       get line1() {
-        return `Both of the 7:30 servers made $${ this.earlyTips }, and the 9:00 server made $${ this.lateTips }.`;
+        return `The 7:30 servers made $${ this.earlyTips }, and the 9:00 server made $${ this.lateTips }.`;
       },
       get line2() {
         return `The hourly rate was $${ this.payRate }.`;
@@ -49,8 +49,10 @@ const Output = props => {
 
   return (
     <div className="outputBlock">
+      <hr/>
       <p>{output[props.day].line1}</p>
       <p>{output[props.day].line2}</p>
+      <hr/>
     </div>
   );
 };

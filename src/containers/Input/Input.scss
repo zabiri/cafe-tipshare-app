@@ -1,11 +1,21 @@
+@import "../../sass/main.scss";
 .Input {
   font-family: Roboto;
-  font-size: 1.2rem;
   margin: auto;
+  font-size: 2rem;
   padding-top: 1rem;
   width: 70%;
   max-width: 74rem;
   min-width: 29rem;
+  @include respond(tab-land) {
+    font-size: 1.8rem;
+  }
+  @include respond(tab-port) {
+    font-size: 1.6rem;
+  }
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
   &__tabs {
     position: relative;
     text-align: center;
@@ -41,9 +51,8 @@
       cursor: pointer;
       text-shadow: 1px 1px #fff;
       transition: color 0.3s;
-   
+
       &:hover {
-        
         color: #707070;
       }
       &:focus {
@@ -66,7 +75,7 @@
   &__panels {
     background-color: white;
     display: relative;
-    border: solid .1rem #00000030;
+    border: solid 0.1rem #00000030;
     border-right: none;
     border-top: none;
     padding: 1.5rem;
@@ -86,7 +95,7 @@
 #toggle-tab3:checked ~ label[for="toggle-tab3"],
 #toggle-tab4:checked ~ label[for="toggle-tab4"] {
   background: white;
-  border: solid .1rem #00000030;
+  border: solid 0.1rem #00000030;
   border-right: none;
   border-top: none;
   margin-bottom: 0;
@@ -103,5 +112,5 @@
 
 .inputLabel {
   display: block;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }

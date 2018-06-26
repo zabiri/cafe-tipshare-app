@@ -9,11 +9,11 @@
 
 // MEDIA QUERY MANAGER
 // 0-600: phone
-@mixin respond-phone {
-    @media (max-width: 600px) {
-        @content;
-    }
-}
+// @mixin respond-phone {
+//     @media (max-width: 600px) {
+//         @content;
+//     }
+// }
 
 /*    
 600-900: tablet in portrait

@@ -1,3 +1,9 @@
+.Day__description {
+  text-align: center; }
+
+.Day hr {
+  color: #00000020; }
+
 /* .styledCheck */
 .styledCheck {
   width: 20px;

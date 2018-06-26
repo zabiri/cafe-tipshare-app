@@ -2,9 +2,9 @@ import React from "react";
 import "./GrossTips.css";
 
 const GrossTips = props => {
-  return <div>
+  return <div className="GrossTips">
       <label className="inputLabel" htmlFor="grosstips">
-        Gross tips:
+        Gross tips
       </label>
       <div className="grossInput">
         <div className="grossInput__moneySign">
