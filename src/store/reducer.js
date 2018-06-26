@@ -1,7 +1,7 @@
 import * as actionTypes from "./actions";
 
 const initialState = {
-  grossTips: 0,
+  grossTips: (0.00).toFixed(2),
   hours: 8,
   isPatio: false,
   lateHours: 6.5

@@ -1,50 +1,47 @@
 .Header {
-    background-image: url('../../assets/img/cafefront.jpg');
-    background-size: cover;
-
-    background-color: rgb(107, 107, 107); // display: inline-block;
-    position: relative;
+  background-image: url("../../assets/img/cafefront.jpg");
+  background-size: cover;
+  background-color: rgb(107, 107, 107); // display: inline-block;
+  position: relative;
+  width: 100%;
+  font-family: Shrikhand, serif;
+  color: white;
+  text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
+  box-shadow: 0vh 0.5vh 2vh #00000060;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__text-block {
+    text-align: center;
+    display: inline-block;
     width: 100%;
-    font-family: Shrikhand, serif;
-    
-    color: white;
-    text-shadow: 1vh 1vh 4vh #000, -.1rem -.1rem .9rem #000;
-    box-shadow: 0vh .5vh 2vh #00000060;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    &__text-block {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
+  }
+  &__title {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: calc(2rem + 3vw);
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: calc(1.7rem + 1.7vw);
+    margin: .2rem 0 1rem 0;
+    font-weight: 500;
+  }
+  &__logo {
+    position: relative;
+    z-index: 9;
+    width: 15vw;
+    min-width: 5rem;
+    max-width: 20rem;
+    filter: drop-shadow(0vh 2vh 1.5vh black);
+    transition: transform 200ms ease-in-out;
+    backface-visibility: hidden;
+    &:hover {
+      transform: translateY(-0.4rem);
+      transform: scale(1.05);
+      filter: drop-shadow(0vh 2.5vh 2vh black);
     }
-    &__title {
-        position: relative;
-        z-index:10;
-        text-align: center;
-        font-size: 7vw;
-        margin: .5rem 0;
-        font-weight: 500;
-    }
-    &__subtitle {
-        text-align: center;
-        font-size: 5vw;
-        margin: 1rem 0 1rem 0;
-        font-weight: 500;
-
-    }
-    &__logo {
-        position: relative;
-        z-index: 9;
-        width: 15vw;
-        min-width: 8rem;
-        max-width: 20rem;
-        filter: drop-shadow(0vh 2vh 1.5vh black);
-        transition: transform 200ms ease-in-out;
-        backface-visibility: hidden;
-        &:hover {
-            transform: translateY(-.4rem);
-            transform: scale(1.05);
-            filter: drop-shadow(0vh 2.5vh 2vh black);
-        }
-    }
+  }
 }

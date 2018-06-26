@@ -8,8 +8,8 @@ import "./Clockout.css";
 
 const Clockout = props => {
   const format = "h:mm a";
-// This default clockout time is 3:30 PM, which is a good starting
-// point for weekday and weekend shifts.
+  // This default clockout time is 3:30 PM, which is a good starting
+  // point for weekday and weekend shifts.
   const defaultTime = moment()
     .hour(15)
     .minute(30);
@@ -18,14 +18,20 @@ const Clockout = props => {
       <label className="inputLabel" htmlFor="rc-time-picker-input">
         When did everyone clock out?
       </label>
-      <TimePicker
-        showSecond={false}
-        defaultValue={defaultTime}
-        onChange={props.changeTime}
-        format={format}
-        use12Hours
-        inputReadOnly
-      />
+      <div className="TimePicker">
+        <div className="TimePicker__glyph">
+          <i class="far fa-alarm-clock" />
+        </div>
+        <TimePicker
+          className="TimePicker__input"
+          showSecond={false}
+          defaultValue={defaultTime}
+          onChange={props.changeTime}
+          format={format}
+          use12Hours
+          inputReadOnly
+        />
+      </div>
     </div>
   );
 };

@@ -6,10 +6,10 @@
   width: 100%;
   font-family: Shrikhand, serif;
   color: white;
-  text-shadow: 1vh 1vh 4vh #000, -.1rem -.1rem .9rem #000;
-  box-shadow: 0vh .5vh 2vh #00000060;
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
+  box-shadow: 0vh 0.5vh 2vh #00000060;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   .Header__text-block {
     text-align: center;
     display: inline-block;
@@ -18,19 +18,19 @@
     position: relative;
     z-index: 10;
     text-align: center;
-    font-size: 7vw;
-    margin: .5rem 0;
+    font-size: calc(2rem + 3vw);
+    margin: 0.5rem 0 0 0;
     font-weight: 500; }
   .Header__subtitle {
     text-align: center;
-    font-size: 5vw;
-    margin: 1rem 0 1rem 0;
+    font-size: calc(1.7rem + 1.7vw);
+    margin: .2rem 0 1rem 0;
     font-weight: 500; }
   .Header__logo {
     position: relative;
     z-index: 9;
     width: 15vw;
-    min-width: 8rem;
+    min-width: 5rem;
     max-width: 20rem;
     filter: drop-shadow(0vh 2vh 1.5vh black);
     transition: transform 200ms ease-in-out;

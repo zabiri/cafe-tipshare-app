@@ -1,10 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./Output.css";
 const Output = props => {
-  let content = null;
-  // let split = 3;
-  // let payRate = 0;
-  // let supportTips = 0;
   let output = {
     MTW: {
       totalHours: props.hours * 2 + props.lateHours,
