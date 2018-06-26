@@ -12,30 +12,30 @@ const Output = props => {
       get earlyTips() { return (this.payRate * props.hours).toFixed(2); },
       get lateTips() { return (this.payRate * props.lateHours).toFixed(2); },
       get line1() {
-        return `Both of the 7:30 servers made ${ this.earlyTips }, and the 9:30 server made ${ this.lateTips }.`;
+        return `Both of the 7:30 servers made $${ this.earlyTips }, and the 9:00 server made $${ this.lateTips }.`;
       },
       get line2() {
-        return `The hourly rate was ${ this.payRate }.`;
+        return `The hourly rate was $${ this.payRate }.`;
       }
     },
     Thursday: {
       supportTips: props.grossTips * 0.1,
       get split() { return ( props.grossTips - this.supportTips ) / 3; },
       get line1() { 
-        return `All three servers made ${ this.split.toFixed(2) }.`; 
+        return `All three servers made $${ this.split.toFixed(2) }.`; 
       },
       get line2() { 
-        return `The support staff made ${ this.supportTips.toFixed(2) }.`; 
+        return `The support staff made $${ this.supportTips.toFixed(2) }.`; 
       }
     },
     Friday: {
       supportTips: props.grossTips * 0.1,
       get split() { return ( props.grossTips - this.supportTips ) / 4; },
       get line1() {
-        return `All four servers made ${ this.split.toFixed(2) }.`;
+        return `All four servers made $${ this.split.toFixed(2) }.`;
       },
       get line2() {
-        return `The support staff made ${ this.supportTips.toFixed(2) }.`;
+        return `The support staff made $${ this.supportTips.toFixed(2) }.`;
       }
     },
     Weekend: {
@@ -44,7 +44,7 @@ const Output = props => {
       get split() { return ( props.grossTips - this.supportTips - 65 ) / this.serverNumber;
       },
       get line1() {
-        return `All ${ props.patio ? "five" : "four" } servers made ${ this.split.toFixed(2) }, and the support staff made ${ this.supportTips.toFixed(2) }.`;
+        return `All ${ props.patio ? "five" : "four" } servers made $${ this.split.toFixed(2) }, and the support staff made $${ this.supportTips.toFixed(2) }.`;
       },
       line2: `This includes $25.00 for the silverware roller, and a minimum of $40.00 for the kitchen.`
     }

@@ -36,7 +36,7 @@ const Day = props => {
   const dayBlockInfo = {
     MTW: {
       description:
-        "On Mondays-Wednesdays, there are no silverware rollers or support staff.Also, one of the three servers arrives at 9: 00 am instead of 7: 30 am.",
+        "On Mondays-Wednesdays, there are no silverware rollers or support staff. Also, one of the three servers arrives at 9:00 am instead of 7:30 am.",
       extraJSX: <Clockout changeTime={onChangeTime} />
     },
     Thursday: {
@@ -51,7 +51,7 @@ const Day = props => {
     },
     Weekend: {
       description:
-        "On weekends, there are several support staff paid 15% of gross tips as well as a silverware roller.",
+        "On weekends, there are several support staff paid 15% of gross tips as well as a silverware roller.  There is also a weather-permitting patio server.",
       extraJSX: (
         <div className="patioBlock">
           <div className="styledCheck">
@@ -63,7 +63,7 @@ const Day = props => {
             />
             <label htmlFor="styledCheck" />
           </div>
-          <p className="label">Check here if there was a patio server</p>
+          <p className="label">Check for patio server</p>
         </div>
       )
     }
