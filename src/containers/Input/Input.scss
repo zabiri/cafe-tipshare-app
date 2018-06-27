@@ -51,9 +51,10 @@
       cursor: pointer;
       text-shadow: 1px 1px #fff;
       transition: color 0.3s;
+      color: #707070;
 
       &:hover {
-        color: #707070;
+        color: #000;
       }
       &:focus {
         box-shadow: 0 0 5px hsl(208, 99%, 50%);

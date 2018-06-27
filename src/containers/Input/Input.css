@@ -355,9 +355,10 @@ ORDER:  base+typography > gen layout + grid > page layout > components
       transition: all 100ms ease-in;
       cursor: pointer;
       text-shadow: 1px 1px #fff;
-      transition: color 0.3s; }
+      transition: color 0.3s;
+      color: #707070; }
       .Input__tabs-label:hover {
-        color: #707070; }
+        color: #000; }
       .Input__tabs-label:focus {
         box-shadow: 0 0 5px #0188fe;
         border-color: #0188fe;
