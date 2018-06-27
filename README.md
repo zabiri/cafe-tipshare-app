@@ -27,10 +27,10 @@ Obviously, this is a bespoke solution for a single restaurant, but some of the f
 
 ### Version history:
 
-* 1.0 - the Angular 4 version (hosted [here](http://zachbiri.com/sandbox/cbts))
-  * The source for this version is, unfortunately, lost forever:  I was extremely new to GitHub and accidentally pushed up a blank Angular project without noticing.   Since you can't really de-compile built Angular, my dist version still hosted above is all that remains of v1.0.  How embarrassing!
 * 2.0 - the React 16.3 version
   * The current version, made with React+Redux, because I enjoy React a little more than Angular.  
+* 1.0 - the Angular 4 version (hosted [here](http://zachbiri.com/sandbox/cbts))
+  * The source for this version is, unfortunately, lost forever:  I was extremely new to GitHub and accidentally pushed up a blank Angular project without noticing.   Since you can't really de-compile built Angular, my dist version still hosted above is all that remains of v1.0.  How embarrassing!
 
 ##
 
