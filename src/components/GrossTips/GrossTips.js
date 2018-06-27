@@ -9,7 +9,7 @@ const GrossTips = props => {
       </label>
       <div className="GrossTips__grossInput">
         <div className="GrossTips__grossInput-preInput">
-          <i class="far fa-money-bill-wave GrossTips__grossInput-preInput-moneyGlyph" />{" "}
+          <i className="far fa-money-bill-wave GrossTips__grossInput-preInput-moneyGlyph" />{" "}
           <span>&#36;</span>
         </div>
         <input

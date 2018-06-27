@@ -20,7 +20,7 @@ const Clockout = props => {
       </label>
       <div>
         <div className="Clockout__glyph">
-          <i class="far fa-alarm-clock" />
+          <i className="far fa-alarm-clock" />
         </div>
         <TimePicker
           showSecond={false}

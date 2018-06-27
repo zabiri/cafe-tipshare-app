@@ -380,7 +380,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     margin: auto;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s; }
+    transition: 0.4s ease-in-out; }
     @media only screen and (max-width: 75em) {
       .Input__panels {
         padding: 1.05rem 3rem 3rem 3rem; } }
@@ -414,3 +414,12 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 .inputLabel {
   display: block;
   padding: 0.5rem 0; }
+
+.fade-in {
+  animation: fade-in-day 400ms ease-in-out; }
+
+@keyframes fade-in-day {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

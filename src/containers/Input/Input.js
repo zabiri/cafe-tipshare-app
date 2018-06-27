@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import AnimateOnChange from 'react-animate-on-change'
 
 import Day from '../../components/Day/Day'
 
@@ -31,7 +31,7 @@ export class Input extends Component {
             checked={this.state.checkedRadio === "MTW"}
             onChange={this.onTabChange}
           />
-          <label className="Input__tabs-label" for="toggle-tab1">MTW</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab1">MTW</label>
 
           <input
           className="Input__tabs-radio"
@@ -42,7 +42,7 @@ export class Input extends Component {
             checked={this.state.checkedRadio === "Thursday"}
             onChange={this.onTabChange}
           />
-          <label className="Input__tabs-label" for="toggle-tab2">Thurs</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab2">Thurs</label>
 
           <input
           className="Input__tabs-radio"
@@ -53,7 +53,7 @@ export class Input extends Component {
             checked={this.state.checkedRadio === "Friday"}
             onChange={this.onTabChange}
           />
-          <label className="Input__tabs-label" for="toggle-tab3">Fri</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab3">Fri</label>
 
           <input
           className="Input__tabs-radio"
@@ -64,12 +64,17 @@ export class Input extends Component {
             checked={this.state.checkedRadio === "Weekend"}
             onChange={this.onTabChange}
           />
-          <label className="Input__tabs-label" for="toggle-tab4">Sat-Sun</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab4">Sat-Sun</label>
         </div>
         <div className="Input__panels">
-          
+          <AnimateOnChange
+            baseClassName="Poop"
+            animationClassName="fade-in"
+            animate={this.state.checkedRadio.diff !== 0}
+            
+          >
           <Day day={this.state.checkedRadio} key={this.state.checkedRadio}/>
-          
+          </AnimateOnChange>
         </div>
       </div>
     );
