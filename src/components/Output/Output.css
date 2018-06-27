@@ -321,3 +321,5 @@ ORDER:  base+typography > gen layout + grid > page layout > components
   border-radius: .5rem;
   padding: 0.1rem 2rem;
   background-color: #f4f4f8; }
+  .outputBlock__moneyValue {
+    color: #d9302b; }
