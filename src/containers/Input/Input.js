@@ -1,82 +1,76 @@
 import React, { Component } from "react";
+
+
 import Day from '../../components/Day/Day'
 
 import "./Input.css";
 
 export class Input extends Component {
   state = {
-    checkedRadio: "option1"
+    checkedRadio: "MTW",
+    previous: null,
   };
   onTabChange = event => {
     this.setState({
+      previous: this.state.checkedRadio,
       checkedRadio: event.target.value
     });
   };
+
   render() {
-    let content = null;
-    switch (this.state.checkedRadio) {
-      case "option1":
-        content = <Day day="MTW"/>;
-        break;
-      case "option2":
-        content = <Day day="Thursday" />;
-        break;
-      case "option3":
-        content = <Day day="Friday" />;
-        break;
-      case "option4":
-        content = <Day day="Weekend" />;
-        break;
-        default: return null
-    }
+
     return (
       <div className="Input">
         <div className="Input__tabs">
           <input
           className="Input__tabs-radio"
-            value="option1"
+            value="MTW"
             type="radio"
             name="tabs"
             id="toggle-tab1"
-            checked={this.state.checkedRadio === "option1"}
+            checked={this.state.checkedRadio === "MTW"}
             onChange={this.onTabChange}
           />
           <label className="Input__tabs-label" for="toggle-tab1">MTW</label>
 
           <input
           className="Input__tabs-radio"
-            value="option2"
+            value="Thursday"
             type="radio"
             name="tabs"
             id="toggle-tab2"
-            checked={this.state.checkedRadio === "option2"}
+            checked={this.state.checkedRadio === "Thursday"}
             onChange={this.onTabChange}
           />
           <label className="Input__tabs-label" for="toggle-tab2">Thurs</label>
 
           <input
           className="Input__tabs-radio"
-            value="option3"
+            value="Friday"
             type="radio"
             name="tabs"
             id="toggle-tab3"
-            checked={this.state.checkedRadio === "option3"}
+            checked={this.state.checkedRadio === "Friday"}
             onChange={this.onTabChange}
           />
           <label className="Input__tabs-label" for="toggle-tab3">Fri</label>
 
           <input
           className="Input__tabs-radio"
-            value="option4"
+            value="Weekend"
             type="radio"
             name="tabs"
             id="toggle-tab4"
-            checked={this.state.checkedRadio === "option4"}
+            checked={this.state.checkedRadio === "Weekend"}
             onChange={this.onTabChange}
           />
           <label className="Input__tabs-label" for="toggle-tab4">Sat-Sun</label>
         </div>
-        <div className="Input__panels">{content}</div>
+        <div className="Input__panels">
+          
+          <Day day={this.state.checkedRadio} key={this.state.checkedRadio}/>
+          
+        </div>
       </div>
     );
   }
