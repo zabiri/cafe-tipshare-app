@@ -20,7 +20,7 @@ export class Input extends Component {
   render() {
 
     return (
-      <div className="Input">
+      <main className="Input">
         <div className="Input__tabs">
           <input
           className="Input__tabs-radio"
@@ -76,7 +76,7 @@ export class Input extends Component {
           <Day day={this.state.checkedRadio} key={this.state.checkedRadio}/>
           </AnimateOnChange>
         </div>
-      </div>
+      </main>
     );
   }
 }
