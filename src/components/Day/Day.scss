@@ -1,57 +1,69 @@
+@import '../../sass/main.scss';
 .Day {
   &__description {
-    text-align: center;
+    text-align: left;
+    text-indent: 2.999rem;
+    @include respond(tab-land) {
+      text-indent: 2.25rem;
+    }
+    @include respond(tab-port) {
+      text-indent: 1.875rem;
+    }
+    @include respond(phone) {
+      text-indent: 1.5rem;
+    }
   }
   & hr {
     color: #00000020;
   }
-}
-/* .styledCheck */
-.styledCheck {
-  width: 20px;
-  position: relative;
-  margin: 1rem 0;
-  display: inline-block;
-  label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fcfff4;
-    background: linear-gradient(hsl(0, 0, 100%) 0%, hsl(0, 0, 95%) 100%);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #333;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
+  &__patioBlock {
+    
+    margin-bottom: -1.2rem;
+    &-label {
+      display: inline-block;
+      padding-left: 1rem;
+      transform: translateY(0.2rem);
     }
-    &:hover::after {
-      opacity: 0.5;
+    &-styledCheck {
+      width: 20px;
+      position: relative;
+      margin: 1rem 0;
+      display: inline-block;
+      &-visibleBox {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fcfff4;
+        background: linear-gradient(hsl(240, 22%, 96%) 0%, hsl(240, 22%, 90%) 100%);
+        border-radius: 4px;
+        box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+        &:after {
+          content: "";
+          width: 9px;
+          height: 5px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border: 3px solid #333;
+          border-top: none;
+          border-right: none;
+          background: transparent;
+          opacity: 0;
+          transform: rotate(-45deg);
+        }
+        &:hover::after {
+          opacity: 0.5;
+        }
+      }
+      &-invisibleBox {
+        visibility: hidden;
+        &:checked + label:after {
+          opacity: 1;
+        }
+      }
     }
   }
-  input[type=checkbox] {
-    visibility: hidden;
-    &:checked + label:after {
-      opacity: 1;
-    }
-  }    
-}
-/* end .styledCheck */
-
-.label {
-    display: inline-block;
-    padding-left: 1rem;
-    transform: translateY(.2rem);
 }

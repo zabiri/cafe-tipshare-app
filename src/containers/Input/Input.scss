@@ -1,6 +1,6 @@
 @import "../../sass/main.scss";
 .Input {
-  font-family: Roboto;
+  font-family: Josefin Sans;
   margin: auto;
   font-size: 2rem;
   padding-top: 1rem;
@@ -34,7 +34,7 @@
       border: 0.1rem solid transparent;
       border-radius: 10px;
       border-bottom: none;
-      bottom: -0.1rem;
+      bottom: -0.6rem;
       position: relative;
       list-style: none;
       padding: 0.9rem 0;
@@ -78,7 +78,16 @@
     border: solid 0.1rem #00000030;
     border-right: none;
     border-top: none;
-    padding: 1.5rem;
+    padding: 1.4rem 4rem 4rem 4rem;
+    @include respond(tab-land) {
+      padding: 1.05rem 3rem 3rem 3rem;
+    }
+    @include respond(tab-port) {
+      padding: .87rem 2.5rem 2.5rem 2.5rem;
+    }
+    @include respond(phone) {
+      padding: .7rem 2rem 2rem 2rem;
+    }
     margin: auto;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

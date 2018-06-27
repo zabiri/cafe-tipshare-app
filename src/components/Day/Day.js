@@ -53,17 +53,18 @@ const Day = props => {
       description:
         "On weekends, support staff split 15% of gross tips, and there is a silverware roller. Weather permitting, there is a patio server.",
       extraJSX: (
-        <div className="patioBlock">
-          <div className="styledCheck">
+        <div className="Day__patioBlock">
+          <div className="Day__patioBlock-styledCheck">
             <input
+              className="Day__patioBlock-styledCheck-invisibleBox"
               id="styledCheck"
               type="checkbox"
               name="wasThePatioOpen"
               onChange={props.onChangePatio}
             />
-            <label htmlFor="styledCheck" />
+            <label className="Day__patioBlock-styledCheck-visibleBox" htmlFor="styledCheck" />
           </div>
-          <p className="label">Check for patio server</p>
+          <p className="Day__patioBlock-label">Check for patio server</p>
         </div>
       )
     }

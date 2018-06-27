@@ -18,20 +18,20 @@ const Output = props => {
       supportTips: props.grossTips * 0.1,
       get split() { return ( props.grossTips - this.supportTips ) / 3; },
       get line1() { 
-        return `All three servers made $${ this.split.toFixed(2) }.`; 
+        return `Server tips: $${ this.split.toFixed(2) }.`; 
       },
       get line2() { 
-        return `The support staff made $${ this.supportTips.toFixed(2) }.`; 
+        return `Support staff tips: $${ this.supportTips.toFixed(2) }.`; 
       }
     },
     Friday: {
       supportTips: props.grossTips * 0.1,
       get split() { return ( props.grossTips - this.supportTips ) / 4; },
       get line1() {
-        return `All four servers made $${ this.split.toFixed(2) }.`;
+        return `Server tips: $${ this.split.toFixed(2) }.`;
       },
       get line2() {
-        return `The support staff made $${ this.supportTips.toFixed(2) }.`;
+        return `Support staff tips: $${ this.supportTips.toFixed(2) }.`;
       }
     },
     Weekend: {
@@ -42,17 +42,17 @@ const Output = props => {
       get line1() {
         return `All ${ props.patio ? "five" : "four" } servers made $${ this.split.toFixed(2) }, and the support staff made $${ this.supportTips.toFixed(2) }.`;
       },
-      line2: `This includes $25.00 for the silverware roller, and a minimum of $40.00 for the kitchen.`
+      line2: `(Includes $25.00 for a silverware roller, and minimum $40.00 for the kitchen.)`
     }
   };
 
 
   return (
     <div className="outputBlock">
-      <hr/>
+      
       <p>{output[props.day].line1}</p>
       <p>{output[props.day].line2}</p>
-      <hr/>
+      
     </div>
   );
 };

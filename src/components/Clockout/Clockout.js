@@ -14,16 +14,15 @@ const Clockout = props => {
     .hour(15)
     .minute(30);
   return (
-    <div>
+    <div className="Clockout">
       <label className="inputLabel" htmlFor="rc-time-picker-input">
         When did everyone clock out?
       </label>
-      <div className="TimePicker">
-        <div className="TimePicker__glyph">
+      <div>
+        <div className="Clockout__glyph">
           <i class="far fa-alarm-clock" />
         </div>
         <TimePicker
-          className="TimePicker__input"
           showSecond={false}
           defaultValue={defaultTime}
           onChange={props.changeTime}

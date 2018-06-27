@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto|Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin|Shrikhand");
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -315,68 +315,82 @@ template {
 ORDER:  base+typography > gen layout + grid > page layout > components
 
  */
-.grossInput {
-  box-sizing: border-box;
-  width: 100%;
-  height: 2.8rem;
-  position: relative;
-  display: inline-block;
-  padding: 2rem 7px;
-  height: 2.8rem;
-  cursor: text;
-  line-height: 1.5;
-  color: #000;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+.GrossTips {
+  margin-bottom: -3rem; }
   @media only screen and (max-width: 75em) {
-    .grossInput {
-      padding: 1.7rem 7px; } }
+    .GrossTips {
+      margin-bottom: -3rem; } }
   @media only screen and (max-width: 56.25em) {
-    .grossInput {
-      padding: 1.5rem 7px; } }
+    .GrossTips {
+      margin-bottom: -2.5rem; } }
   @media only screen and (max-width: 37.5em) {
-    .grossInput {
-      padding: 4px 7px; } }
-  .grossInput__moneySign {
-    transform: translate(0, -1.6rem); }
-    @media only screen and (max-width: 75em) {
-      .grossInput__moneySign {
-        transform: translate(0, -1.3rem); } }
-    @media only screen and (max-width: 56.25em) {
-      .grossInput__moneySign {
-        transform: translate(0, -1.2rem); } }
-    @media only screen and (max-width: 37.5em) {
-      .grossInput__moneySign {
-        transform: translate(0, 0rem); } }
-  .grossInput__moneyGlyph {
-    transform: translate(0, 0.1rem);
-    color: #09c009; }
-    @media only screen and (max-width: 75em) {
-      .grossInput__moneyGlyph {
-        transform: translate(0, 0rem); } }
-    @media only screen and (max-width: 56.25em) {
-      .grossInput__moneyGlyph {
-        transform: translate(0, 0rem); } }
-    @media only screen and (max-width: 37.5em) {
-      .grossInput__moneyGlyph {
-        transform: translate(0, 0rem); } }
-  .grossInput__input {
+    .GrossTips {
+      margin-bottom: -1.2rem; } }
+  .GrossTips__grossInput {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+    border-radius: .5rem;
+    background-color: #f4f4f8;
     box-sizing: border-box;
+    width: 100%;
+    height: 2.8rem;
+    position: relative;
     display: inline-block;
-    height: 2.4rem;
-    width: calc(100% - 4rem);
-    border: 0;
-    font-family: Roboto;
-    transform: translate(4.1rem, -4.6rem); }
+    padding: 2rem 7px;
+    height: 4rem;
+    height: 2.8rem;
+    cursor: text;
+    line-height: 1.5;
+    color: #000;
+    transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
     @media only screen and (max-width: 75em) {
-      .grossInput__input {
-        transform: translate(3.7rem, -4rem); } }
+      .GrossTips__grossInput {
+        height: 3.4rem;
+        padding: 1.7rem 7px; } }
     @media only screen and (max-width: 56.25em) {
-      .grossInput__input {
-        transform: translate(3.4rem, -3.6rem); } }
+      .GrossTips__grossInput {
+        height: 3rem;
+        padding: 1.5rem 7px; } }
     @media only screen and (max-width: 37.5em) {
-      .grossInput__input {
-        transform: translate(2.6rem, -2.1rem); } }
+      .GrossTips__grossInput {
+        height: 2.8rem;
+        padding: 4px 7px; } }
+    .GrossTips__grossInput-preInput {
+      transform: translate(0, -1.3rem); }
+      @media only screen and (max-width: 75em) {
+        .GrossTips__grossInput-preInput {
+          transform: translate(0, -1.1rem); } }
+      @media only screen and (max-width: 56.25em) {
+        .GrossTips__grossInput-preInput {
+          transform: translate(0, -1.1rem); } }
+      @media only screen and (max-width: 37.5em) {
+        .GrossTips__grossInput-preInput {
+          transform: translate(0, 0.16rem); } }
+      .GrossTips__grossInput-preInput-moneyGlyph {
+        transform: translate(0, -0.1rem);
+        color: #09c009; }
+        @media only screen and (max-width: 75em) {
+          .GrossTips__grossInput-preInput-moneyGlyph {
+            transform: translate(0, 0rem); } }
+        @media only screen and (max-width: 56.25em) {
+          .GrossTips__grossInput-preInput-moneyGlyph {
+            transform: translate(0, 0rem); } }
+        @media only screen and (max-width: 37.5em) {
+          .GrossTips__grossInput-preInput-moneyGlyph {
+            transform: translate(0, 0rem); } }
+    .GrossTips__grossInput-input {
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: #f4f4f8;
+      height: 2.4rem;
+      width: calc(100% - 4rem);
+      border: 0;
+      transform: translate(4.5rem, -4.4rem); }
+      @media only screen and (max-width: 75em) {
+        .GrossTips__grossInput-input {
+          transform: translate(4rem, -4rem); } }
+      @media only screen and (max-width: 56.25em) {
+        .GrossTips__grossInput-input {
+          transform: translate(3.5rem, -3.6rem); } }
+      @media only screen and (max-width: 37.5em) {
+        .GrossTips__grossInput-input {
+          transform: translate(2.7rem, -2rem); } }

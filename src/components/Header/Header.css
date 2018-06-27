@@ -1,40 +1,109 @@
+/*    
+600-900: tablet in portrait
+900-1200: tablet in landscape
+[1200-1800] is where our normal styles apply
+1800+: big desktop
+
+ choices for breakpoint argument:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+1em = 16px
+
+
+ORDER:  base+typography > gen layout + grid > page layout > components
+
+ */
 .Header {
   background-image: url("../../assets/img/cafefront.jpg");
   background-size: cover;
   background-color: #6b6b6b;
   position: relative;
-  width: 100%;
+  background-position: center 15%;
   font-family: Shrikhand, serif;
   color: white;
   text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
   box-shadow: 0vh 0.5vh 2vh #00000060;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .Header {
+      background-position: center 15%; } }
+  @media only screen and (max-width: 56.25em) {
+    .Header {
+      background-position: center 15%; } }
+  @media only screen and (max-width: 37.5em) {
+    .Header {
+      background-position: center center; } }
+  .Header__flexParent {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .Header__flexParent {
+        flex-direction: column; } }
   .Header__text-block {
-    text-align: center;
-    display: inline-block;
-    width: 100%; }
-  .Header__title {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    font-size: calc(2rem + 3vw);
-    margin: 0.5rem 0 0 0;
-    font-weight: 500; }
-  .Header__subtitle {
-    text-align: center;
-    font-size: calc(1.7rem + 1.7vw);
-    margin: .2rem 0 1rem 0;
-    font-weight: 500; }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative; }
+    .Header__text-block-title {
+      width: 100%;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      font-size: 7.5rem;
+      margin: 0.5rem 0 0 0;
+      font-weight: 500; }
+      @media only screen and (max-width: 75em) {
+        .Header__text-block-title {
+          font-size: 6.5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .Header__text-block-title {
+          font-size: 4.8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .Header__text-block-title {
+          font-size: calc(2rem + 3vw); } }
+    .Header__text-block-subtitle {
+      width: 100%;
+      text-align: center;
+      font-size: 4.68rem;
+      margin: 0.2rem 0 1rem 0;
+      font-weight: 500; }
+      @media only screen and (max-width: 75em) {
+        .Header__text-block-subtitle {
+          font-size: 4.06rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .Header__text-block-subtitle {
+          font-size: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .Header__text-block-subtitle {
+          font-size: calc(1.7rem + 1.7vw); } }
   .Header__logo {
     position: relative;
-    z-index: 9;
-    width: 15vw;
-    min-width: 5rem;
-    max-width: 20rem;
+    z-index: 1;
+    width: 17.3rem;
+    padding: 0 1rem;
     filter: drop-shadow(0vh 2vh 1.5vh black);
     transition: transform 200ms ease-in-out;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 75em) {
+      .Header__logo {
+        width: 15rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .Header__logo {
+        width: 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .Header__logo {
+        width: 10rem; } }
     .Header__logo:hover {
       transform: translateY(-0.4rem);
       transform: scale(1.05);
