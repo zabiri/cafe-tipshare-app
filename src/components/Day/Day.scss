@@ -2,20 +2,6 @@
 .Day {
   &__description {
     text-align: left;
-    text-indent: 2.999rem;
-    @include respond(tab-land) {
-      text-indent: 2.25rem;
-    }
-    @include respond(tab-port) {
-      text-indent: 1.875rem;
-    }
-    @include respond(phone) {
-      text-indent: 1.5rem;
-    }
-    // &::first-letter {
-    //   font-size: 120%;
-
-  // }
   }
   & hr {
     color: #00000020;
