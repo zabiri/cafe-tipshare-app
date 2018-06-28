@@ -333,7 +333,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
   margin-top: 1rem;
   margin-bottom: 1rem; }
   .Clockout__glyph {
-    color: #5e5efd;
+    color: #36489e;
     position: absolute;
     transform: translate(0.7rem, 0.8rem);
     z-index: 1; }
@@ -359,9 +359,9 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     width: 100%;
     position: relative;
     display: inline-block;
-    padding: 0.5rem 3rem;
+    padding: 0.3rem 2.9rem;
     box-sizing: border-box;
-    height: 4rem;
+    height: 3.4rem;
     cursor: text;
     line-height: 1.5;
     color: #000;

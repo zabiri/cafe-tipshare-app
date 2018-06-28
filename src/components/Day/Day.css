@@ -341,8 +341,6 @@ ORDER:  base+typography > gen layout + grid > page layout > components
   @media only screen and (max-width: 37.5em) {
     .Day__description {
       text-indent: 1.5rem; } }
-  .Day__description::first-letter {
-    font-size: 150%; }
 
 .Day hr {
   color: #00000020; }

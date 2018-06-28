@@ -346,11 +346,10 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     background-color: #f4f4f8;
     box-sizing: border-box;
     width: 100%;
-    height: 2.8rem;
     position: relative;
     display: inline-block;
-    padding: 2rem 7px;
-    height: 4rem;
+    padding: 1.7rem 7px;
+    height: 3.4rem;
     height: 2.8rem;
     cursor: text;
     line-height: 1.5;
@@ -369,7 +368,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
         height: 2.8rem;
         padding: 4px 7px; } }
     .GrossTips__grossInput-preInput {
-      transform: translate(0, -1.3rem); }
+      transform: translate(0, -1.1rem); }
       @media only screen and (max-width: 75em) {
         .GrossTips__grossInput-preInput {
           transform: translate(0, -1.1rem); } }
@@ -381,10 +380,10 @@ ORDER:  base+typography > gen layout + grid > page layout > components
           transform: translate(0, 0.16rem); } }
       .GrossTips__grossInput-preInput-moneyGlyph {
         transform: translate(0, -0.1rem);
-        color: #09c009; }
+        color: #35632c; }
         @media only screen and (max-width: 75em) {
           .GrossTips__grossInput-preInput-moneyGlyph {
-            transform: translate(0, 0rem); } }
+            transform: translate(0, -0.1rem); } }
         @media only screen and (max-width: 56.25em) {
           .GrossTips__grossInput-preInput-moneyGlyph {
             transform: translate(0, 0rem); } }
@@ -398,10 +397,10 @@ ORDER:  base+typography > gen layout + grid > page layout > components
       height: 2.4rem;
       width: calc(100% - 4rem);
       border: 0;
-      transform: translate(4.5rem, -4.4rem); }
+      transform: translate(3.5rem, -3.6rem); }
       @media only screen and (max-width: 75em) {
         .GrossTips__grossInput-input {
-          transform: translate(4rem, -4rem); } }
+          transform: translate(3.5rem, -3.6rem); } }
       @media only screen and (max-width: 56.25em) {
         .GrossTips__grossInput-input {
           transform: translate(3.5rem, -3.6rem); } }

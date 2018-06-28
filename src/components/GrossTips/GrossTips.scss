@@ -15,11 +15,11 @@
     background-color: $inset-background-color;
     box-sizing: border-box;
     width: 100%;
-    height: 2.8rem;
+    
     position: relative;
     display: inline-block;
-    padding: 2rem 7px;
-    height: 4rem;
+    padding: 1.7rem 7px;
+    height: 3.4rem;
     @include respond(tab-land) {
       height: 3.4rem;
       padding: 1.7rem 7px;
@@ -41,7 +41,7 @@
       background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),
       box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &-preInput {
-      transform: translate(0, -1.3rem);
+      transform: translate(0, -1.1rem);
       @include respond(tab-land) {
         transform: translate(0, -1.1rem);
       }
@@ -53,10 +53,10 @@
       }
       &-moneyGlyph {
         transform: translate(0, -0.1rem);
-        color: rgb(9, 192, 9);
+        color: #35632c;
 
         @include respond(tab-land) {
-          transform: translate(0, 0rem);
+          transform: translate(0, -.1rem);
         }
         @include respond(tab-port) {
           transform: translate(0, 0rem);
@@ -75,9 +75,9 @@
       width: calc(100% - 4rem);
       border: 0;
       // font-family: Roboto;
-      transform: translate(4.5rem, -4.4rem);
+      transform: translate(3.5rem, -3.6rem);
       @include respond(tab-land) {
-        transform: translate(4rem, -4rem);
+        transform: translate(3.5rem, -3.6rem);
       }
       @include respond(tab-port) {
         transform: translate(3.5rem, -3.6rem);

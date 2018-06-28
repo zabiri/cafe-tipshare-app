@@ -1,17 +1,17 @@
 @import "../../sass/main.scss";
 .Input {
   box-sizing: border-box;
-  font-family: Josefin Sans;
+  font-family: Libre Franklin;
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   width: 70%;
   max-width: 74rem;
   min-width: 29rem;
-  min-height: 54.4rem;
+  min-height: 48.9rem;
   @include respond(tab-land) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     min-height: 48.9rem;
   }
   @include respond(tab-port) {

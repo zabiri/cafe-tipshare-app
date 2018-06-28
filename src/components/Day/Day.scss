@@ -12,10 +12,10 @@
     @include respond(phone) {
       text-indent: 1.5rem;
     }
-    &::first-letter {
-      font-size: 150%;
+    // &::first-letter {
+    //   font-size: 120%;
 
-  }
+  // }
   }
   & hr {
     color: #00000020;

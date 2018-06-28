@@ -331,19 +331,19 @@ ORDER:  base+typography > gen layout + grid > page layout > components
  */
 .Input {
   box-sizing: border-box;
-  font-family: Josefin Sans;
+  font-family: Libre Franklin;
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   width: 70%;
   max-width: 74rem;
   min-width: 29rem;
-  min-height: 54.4rem;
+  min-height: 48.9rem;
   /* On mouse-over, add a deeper shadow */ }
   @media only screen and (max-width: 75em) {
     .Input {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       min-height: 48.9rem; } }
   @media only screen and (max-width: 56.25em) {
     .Input {
