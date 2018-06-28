@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = () => { 
   return (
     <footer className="Footer">
       <div className="Footer__logobox"> &nbsp; </div>
@@ -16,34 +16,34 @@ const Footer = () => {
           </p>
         </div>
         <div className="Footer__right Footer__cols">
-          <ul class="Footer__list">
+          <ul className="Footer__list">
             <li>
               <a href="http://zachbiri.com">
-                <i class="fab fa-react" />&nbsp;
-                <i class="fab fa-html5" />&nbsp;
-                <i class="fab fa-js-square" />&nbsp;
-                <i class="fab fa-sass" />
+                <i className="fab fa-react" />&nbsp;
+                <i className="fab fa-html5" />&nbsp;
+                <i className="fab fa-js-square" />&nbsp;
+                <i className="fab fa-sass" />
                 : Zach Biri
               </a>
             </li>
             <li>
               <a href="mailto:zachbiri@gmail.com">
-                <i class="fas fa-envelope" /> : zachbiri@gmail.com
+                <i className="fas fa-envelope" /> : zachbiri@gmail.com
               </a>
             </li>
             <li>
               <a href="https://github.com/zabiri/cafeberlin-tipshare">
-                <i class="fab fa-github" /> : zabiri/cafeberlin-tipshare
+                <i className="fab fa-github" /> : zabiri/cafeberlin-tipshare
               </a>
             </li>
 
             <li>
               <a href="https://www.facebook.com/cafeberlincomo/">
-                <i class="fab fa-facebook" /> : @cafeberlincomo
+                <i className="fab fa-facebook" /> : @cafeberlincomo
               </a>
             </li>
             <li>
-              <i class="fas fa-copyright" /> :{" "}
+              <i className="fas fa-copyright" /> :{" "}
               <a href="http://cafeberlincomo.com">Cafe Berlin 2018</a>
             </li>
           </ul>

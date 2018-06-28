@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AnimateOnChange from 'react-animate-on-change'
+import AnimateOnChange from '../../components/AnimateOnChange/AnimateOnChange'
 
 import Day from '../../components/Day/Day'
 
