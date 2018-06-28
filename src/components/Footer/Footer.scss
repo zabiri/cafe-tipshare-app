@@ -1,5 +1,100 @@
+@import "../../sass/main.scss";
 .Footer {
-    background-color:#333333;
-    height: 100%;
-    // flex-grow: 1;
+  padding: 3rem 0;
+  font-family: Josefin Sans;
+  clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
+  @include respond(phone) {
+    clip-path: polygon(0% 0%, 50% 5%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  background-color: #333333;
+  color: $footer-text-color;
+  //   height: 100%;
+
+  box-sizing: border-box;
+
+  &__flexcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  & a {
+    text-decoration: none;
+    color: $footer-text-color;
+  }
+  &__cols {
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    width: 35rem;
+    @include respond(tab-land) {
+      width: 35rem;
+      padding: 0rem 3rem;
+    }
+    @include respond(tab-port) {
+      width: 29rem;
+      padding: 0rem 3rem;
+    }
+    @include respond(phone) {
+      width: 41.9rem;
+    }
+    box-sizing: border-box;
+  }
+  &__left {
+    text-indent: 2%;
+    text-align: justify;
+
+    border-right: 1px rgb(95, 95, 95) solid;
+    @include respond(phone) {
+      border: 0;
+
+      border-bottom: 1px rgb(95, 95, 95) solid;
+    }
+  }
+  &__right {
+    text-align: left;
+    @include respond(phone) {
+      font-size: 1.4rem;
+      border-bottom: 1px rgb(95, 95, 95) solid;
+    }
+  }
+
+  &__list {
+    @include respond(tab-land) {
+      margin-top: 1rem;
+    }
+    @include respond(tab-port) {
+      margin-top: 1.6rem;
+    }
+    @include respond(phone) {
+      margin: 1.6rem auto;
+    }
+    width: 18.5rem;
+    list-style: none;
+    padding: 0;
+    & li {
+      margin: 0.2rem 0;
+    }
+  }
+
+  &__logobox {
+    height: 5rem;
+    @include respond(tab-port) {
+      height: 8rem;
+    }
+    @include respond(tab-port) {
+      height: 8rem;
+    }
+    @include respond(phone) {
+      height: 8rem;
+    }
+    background: linear-gradient(270deg, #4c49b2, #db4eb2, #fbfc79, #0eb7e1);
+    background-size: 800% 800%;
+    mask: url(../../assets/img/spatulas.png);
+    mask-repeat: no-repeat;
+    mask-position: bottom center;
+    margin-bottom: 4rem;
+    mask-size: contain;
+    animation: Gradient 10s ease infinite;
+    padding: 0;
+    margin: 1.6rem 0 1rem 0;
+  }
 }

@@ -298,6 +298,20 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes fade-in-day {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 /*    
 600-900: tablet in portrait
 900-1200: tablet in landscape
@@ -316,24 +330,29 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 
  */
 .Input {
+  box-sizing: border-box;
   font-family: Josefin Sans;
   margin: auto;
   font-size: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   width: 70%;
   max-width: 74rem;
   min-width: 29rem;
+  min-height: 54.4rem;
   /* On mouse-over, add a deeper shadow */ }
   @media only screen and (max-width: 75em) {
     .Input {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem;
+      min-height: 48.9rem; } }
   @media only screen and (max-width: 56.25em) {
     .Input {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem;
+      min-height: 46.8rem; } }
   @media only screen and (max-width: 37.5em) {
     .Input {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      min-height: 41.1rem; } }
   .Input__tabs {
     position: relative;
     text-align: center;
@@ -379,6 +398,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     border-right: none;
     border-top: none;
     padding: 1.4rem 4rem 4rem 4rem;
+    box-sizing: border-box;
     margin: auto;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -419,9 +439,3 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 
 .fade-in {
   animation: fade-in-day 400ms ease-in-out; }
-
-@keyframes fade-in-day {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
