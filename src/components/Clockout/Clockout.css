@@ -355,7 +355,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
   .rc-time-picker * {
     box-sizing: border-box; }
   .rc-time-picker-input {
-    background-color: #f4f4f8;
+    background-color: #faf9f7;
     width: 100%;
     position: relative;
     display: inline-block;

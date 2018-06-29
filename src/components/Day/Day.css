@@ -330,17 +330,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 
  */
 .Day__description {
-  text-align: left;
-  text-indent: 2.999rem; }
-  @media only screen and (max-width: 75em) {
-    .Day__description {
-      text-indent: 2.25rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .Day__description {
-      text-indent: 1.875rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .Day__description {
-      text-indent: 1.5rem; } }
+  text-align: left; }
 
 .Day hr {
   color: #00000020; }

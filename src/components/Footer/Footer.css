@@ -334,7 +334,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
   font-family: Josefin Sans;
   clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #333333;
-  color: white;
+  color: #f1ece7;
   box-sizing: border-box; }
   @media only screen and (max-width: 37.5em) {
     .Footer {
@@ -345,7 +345,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     flex-wrap: wrap; }
   .Footer a {
     text-decoration: none;
-    color: white; }
+    color: #f1ece7; }
   .Footer__cols {
     padding: 0 1.5rem;
     font-size: 1.2rem;

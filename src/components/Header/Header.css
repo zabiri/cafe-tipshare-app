@@ -16,26 +16,22 @@ ORDER:  base+typography > gen layout + grid > page layout > components
 
  */
 .Header {
-  background-image: url("../../assets/img/cafefront.jpg");
-  background-size: cover;
-  background-color: #6b6b6b;
   padding-bottom: 2rem;
   position: relative;
   background-position: center 15%;
-  font-family: Shrikhand, serif;
+  font-family: Josefin Sans, sans-serif;
   color: white;
   text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
-  box-shadow: 0px .2rem .5rem #00000060;
-  padding-top: 2rem; }
+  padding-top: 4rem; }
   @media only screen and (max-width: 75em) {
     .Header {
-      background-position: center 15%; } }
+      padding-top: 4rem; } }
   @media only screen and (max-width: 56.25em) {
     .Header {
-      background-position: center 15%; } }
+      padding-top: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .Header {
-      background-position: center center; } }
+      padding-top: 2rem; } }
   .Header__flexParent {
     text-align: center;
     display: flex;
@@ -54,7 +50,8 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     align-content: center;
     justify-content: center;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
     .Header__text-block-title {
       width: 100%;
       position: relative;
@@ -71,7 +68,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
           font-size: 4.8rem; } }
       @media only screen and (max-width: 37.5em) {
         .Header__text-block-title {
-          font-size: calc(2rem + 3vw); } }
+          font-size: 4.5rem; } }
     .Header__text-block-subtitle {
       width: 100%;
       text-align: center;
@@ -86,7 +83,7 @@ ORDER:  base+typography > gen layout + grid > page layout > components
           font-size: 3rem; } }
       @media only screen and (max-width: 37.5em) {
         .Header__text-block-subtitle {
-          font-size: calc(1.7rem + 1.7vw); } }
+          font-size: 3rem; } }
   .Header__logo {
     position: relative;
     z-index: 1;

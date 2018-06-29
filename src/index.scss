@@ -4,11 +4,15 @@ html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5
   height    : 100vh;
   min-height: 100%;
+
 }
 
 body {
-  margin: 0;
+ 
   padding: 0;
   font-family: sans-serif;
-
+  background-image: url("./assets/img/cafefront.jpg");
+  background-size: cover;
+  background-color: #333333;
+  background-position: 40% center; // display: inline-block;
 }

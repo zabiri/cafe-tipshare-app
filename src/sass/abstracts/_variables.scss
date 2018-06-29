@@ -1,2 +1,6 @@
-$inset-background-color: rgb(244, 244, 248);
-$footer-text-color: white;
+$panel-color: #f1ece7;
+$inset-background-color: lighten($panel-color, 5%);
+
+$footer-text-color: $panel-color;
+$glyph-money-color: #a5bd97;
+$glyph-clock-color: #f39558;

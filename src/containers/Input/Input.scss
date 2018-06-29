@@ -3,24 +3,28 @@
   box-sizing: border-box;
   font-family: Libre Franklin;
   margin: auto;
+  margin-top: 0;
   font-size: 1.6rem;
-  padding-top: 2.5rem;
+  padding-top: 0rem;
   padding-bottom: 2.5rem;
   width: 70%;
   max-width: 74rem;
   min-width: 29rem;
-  min-height: 48.9rem;
+  min-height: 43.5rem;
+  position: relative;
+  z-index: 0;
+
   @include respond(tab-land) {
     font-size: 1.6rem;
-    min-height: 48.9rem;
+    min-height: 42.2rem;
   }
   @include respond(tab-port) {
     font-size: 1.6rem;
-    min-height: 46.8rem;
+    min-height: 43.2rem;
   }
   @include respond(phone) {
     font-size: 1.2rem;
-    min-height: 41.1rem;
+    min-height: 37.7rem;
   }
   &__tabs {
     position: relative;
@@ -30,31 +34,38 @@
     // margin-top: ;
     margin-bottom: -0.7rem;
     border-radius: 3px;
+    z-index: 1;
     &-radio {
       display: none;
     }
     &-label {
       font-size: 1.4rem;
       display: inline-block;
-      width: 24%;
+      width: 23.5%;
+      margin-left: .1rem;
       border: 0.1rem solid transparent;
       border-radius: 10px;
       border-bottom: none;
-      bottom: -0.6rem;
+      bottom: -0.4rem;
       position: relative;
       list-style: none;
       padding: 0.9rem 0;
       transition: all 100ms ease-in;
-
+      z-index: 0;
       cursor: pointer;
-      text-shadow: 1px 1px #fff;
+      // text-shadow: 1px 1px #fff;
       transition: color 0.3s;
       color: #707070;
+      background-color: rgba($panel-color, .8);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border: solid 0.1rem #00000050;
+      border-right: none;
+      border-top: none;
 
-
-      
       &:hover {
         color: #000;
+        background-color: rgba($panel-color, .95);
       }
       &:focus {
         box-shadow: 0 0 5px hsl(208, 99%, 50%);
@@ -74,22 +85,24 @@
   }
 
   &__panels {
-    background-color: white;
-    display: relative;
+    background-color: $panel-color;
+    position: relative;
+    z-index: 2;
     border: solid 0.1rem #00000030;
+    border-radius: 1rem;
     border-right: none;
     border-top: none;
     padding: 1.4rem 4rem 4rem 4rem;
     box-sizing: border-box;
+
     @include respond(tab-land) {
       padding: 1.05rem 3rem 3rem 3rem;
     }
     @include respond(tab-port) {
-      padding: .87rem 2.5rem 2.5rem 2.5rem;
+      padding: 0.87rem 2.5rem 2.5rem 2.5rem;
     }
     @include respond(phone) {
-      padding: .7rem 2rem 2rem 2rem;
-      
+      padding: 0.7rem 2rem 2rem 2rem;
     }
     margin: auto;
     /* Add shadows to create the "card" effect */
@@ -106,20 +119,22 @@
 #toggle-tab2:checked ~ label[for="toggle-tab2"],
 #toggle-tab3:checked ~ label[for="toggle-tab3"],
 #toggle-tab4:checked ~ label[for="toggle-tab4"] {
-  background: white;
-  border: solid 0.1rem #00000030;
-  border-right: none;
-  border-top: none;
+  background: $panel-color;
+  // border: solid 0.1rem #00000030;
+  // border-right: none;
+  // border-top: none;
   margin-bottom: 0;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+  font-weight: bold;
+  border: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding-bottom: 18px;
   color: black;
   cursor: default;
+  transform: translateY(-.3rem);
 }
 
 .inputLabel {
@@ -130,4 +145,3 @@
 .fade-in {
   animation: fade-in-day 400ms ease-in-out;
 }
-
