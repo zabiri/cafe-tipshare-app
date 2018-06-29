@@ -58,9 +58,9 @@ const Day = props => {
             <input
               className="Day__patioBlock-styledCheck-invisibleBox"
               id="styledCheck"
-              type="checkbox"
               name="wasThePatioOpen"
               onChange={props.onChangePatio}
+              type="checkbox"
             />
             <label className="Day__patioBlock-styledCheck-visibleBox" htmlFor="styledCheck" />
           </div>

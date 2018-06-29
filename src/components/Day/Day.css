@@ -312,23 +312,6 @@ template {
   to {
     opacity: 1; } }
 
-/*    
-600-900: tablet in portrait
-900-1200: tablet in landscape
-[1200-1800] is where our normal styles apply
-1800+: big desktop
-
- choices for breakpoint argument:
--phone
--tab-port
--tab-land
--big-desktop
-1em = 16px
-
-
-ORDER:  base+typography > gen layout + grid > page layout > components
-
- */
 .Day__description {
   text-align: left; }
 
@@ -342,34 +325,33 @@ ORDER:  base+typography > gen layout + grid > page layout > components
     padding-left: 1rem;
     transform: translateY(0.2rem); }
   .Day__patioBlock-styledCheck {
-    width: 20px;
-    position: relative;
+    display: inline-block;
     margin: 1rem 0;
-    display: inline-block; }
+    position: relative;
+    width: 20px; }
     .Day__patioBlock-styledCheck-visibleBox {
-      width: 20px;
-      height: 20px;
       cursor: pointer;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #fcfff4;
+      height: 20px;
       background: linear-gradient(#f3f3f7 0%, #e0e0eb 100%);
       border-radius: 4px;
-      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); }
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px; }
       .Day__patioBlock-styledCheck-visibleBox:after {
-        content: "";
-        width: 9px;
-        height: 5px;
-        position: absolute;
-        top: 4px;
-        left: 4px;
         border: 3px solid #333;
         border-top: none;
         border-right: none;
         background: transparent;
+        content: "";
+        height: 5px;
+        left: 4px;
         opacity: 0;
-        transform: rotate(-45deg); }
+        position: absolute;
+        top: 4px;
+        transform: rotate(-45deg);
+        width: 9px; }
       .Day__patioBlock-styledCheck-visibleBox:hover::after {
         opacity: 0.5; }
     .Day__patioBlock-styledCheck-invisibleBox {

@@ -16,19 +16,19 @@ const Clockout = props => {
   return (
     <div className="Clockout">
       <label className="inputLabel" htmlFor="rc-time-picker-input">
-        When did everyone clock out?
+        Clock-out time
       </label>
       <div>
         <div className="Clockout__glyph">
           <i className="far fa-alarm-clock" />
         </div>
         <TimePicker
-          showSecond={false}
           defaultValue={defaultTime}
-          onChange={props.changeTime}
           format={format}
-          use12Hours
           inputReadOnly
+          onChange={props.changeTime}
+          showSecond={false}
+          use12Hours
         />
       </div>
     </div>

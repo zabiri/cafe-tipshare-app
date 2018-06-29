@@ -312,23 +312,6 @@ template {
   to {
     opacity: 1; } }
 
-/*    
-600-900: tablet in portrait
-900-1200: tablet in landscape
-[1200-1800] is where our normal styles apply
-1800+: big desktop
-
- choices for breakpoint argument:
--phone
--tab-port
--tab-land
--big-desktop
-1em = 16px
-
-
-ORDER:  base+typography > gen layout + grid > page layout > components
-
- */
 html {
   font-size: 62.5%;
   height: 100vh;

@@ -12,14 +12,11 @@
   }
   &__grossInput {
     @include insetPanel;
-    background-color: $inset-background-color;
-    box-sizing: border-box;
-    width: 100%;
-    
-    position: relative;
+    cursor: text;
     display: inline-block;
+    height: 2.8rem;
     padding: 1.7rem 7px;
-    height: 3.4rem;
+    width: 100%;
     @include respond(tab-land) {
       height: 3.4rem;
       padding: 1.7rem 7px;
@@ -32,14 +29,7 @@
       height: 2.8rem;
       padding: 4px 7px;
     }
-    height: 2.8rem;
-    cursor: text;
-    line-height: 1.5;
-    color: #000;
 
-    transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),
-      background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),
-      box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &-preInput {
       transform: translate(0, -1.1rem);
       @include respond(tab-land) {
@@ -52,9 +42,8 @@
         transform: translate(0, 0.16rem);
       }
       &-moneyGlyph {
+        color: $glyph-money-color;
         transform: translate(0, -0.1rem);
-        color: #35632c;
-
         @include respond(tab-land) {
           transform: translate(0, -.1rem);
         }
@@ -66,14 +55,13 @@
         }
       }
     }
-
     &-input {
+      background-color: $inset-background-color;
+      border: 0;
       box-sizing: border-box;
       display: inline-block;
-      background-color: $inset-background-color;
       height: 2.4rem;
       width: calc(100% - 4rem);
-      border: 0;
       // font-family: Roboto;
       transform: translate(3.5rem, -3.6rem);
       @include respond(tab-land) {
@@ -85,7 +73,6 @@
       @include respond(phone) {
         transform: translate(2.7rem, -2rem);
       }
-      // font-size: 1.2rem;
     }
   }
 }
