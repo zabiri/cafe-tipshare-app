@@ -1,4 +1,4 @@
-@import '../../sass/main.scss';
+@import "../../sass/main.scss";
 .Day {
   &__description {
     text-align: left;
@@ -21,7 +21,10 @@
       &-visibleBox {
         cursor: pointer;
         height: 20px;
-        background: linear-gradient(hsl(240, 22%, 96%) 0%, hsl(240, 22%, 90%) 100%);
+        background: linear-gradient(
+          hsl(240, 22%, 96%) 0%,
+          hsl(240, 22%, 90%) 100%
+        );
         border-radius: 4px;
         box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
         left: 0;

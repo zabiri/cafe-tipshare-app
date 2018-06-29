@@ -1,10 +1,10 @@
-@import '../../sass/main.scss';
+@import "../../sass/main.scss";
 .outputBlock {
-    margin-top: 2rem;
-    @include insetPanel;
-    padding: 0.1rem 2rem;
-    background-color: $inset-background-color;
-    &__moneyValue {
-        color: #893726;
-    }
+  @include insetPanel;
+  background-color: $inset-background-color;
+  margin-top: 2rem;
+  padding: 0.1rem 2rem;
+  &__moneyValue {
+    color: #893726;
+  }
 }

@@ -1,14 +1,12 @@
 @import "../../sass/abstracts/mixins";
 .Header {
-
-  padding-bottom: 2rem;
-  position: relative;
   background-position: center 15%;
-  font-family: Josefin Sans, sans-serif;
   color: white;
-  text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
-
+  font-family: Josefin Sans, sans-serif;
+  padding-bottom: 2rem;
   padding-top: 4rem;
+  position: relative;
+  text-shadow: 1vh 1vh 4vh #000, -0.1rem -0.1rem 0.9rem #000;
   @include respond(tab-land) {
     padding-top: 4rem;
   }
@@ -19,33 +17,32 @@
     padding-top: 2rem;
   }
   &__flexParent {
-    text-align: center;
     display: flex;
     flex-direction: row;
+    text-align: center;
     @include respond(phone) {
       flex-direction: column;
     }
+    align-content: center;
     flex-wrap: wrap;
     height: 100%;
     justify-content: center;
-    align-content: center;
   }
   &__text-block {
-    // mix-blend-mode: difference;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    z-index: 2;
     position: relative;
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
     &-title {
-      width: 100%;
-      position: relative;
-      z-index: 10;
-      text-align: center;
       font-size: 7.5rem;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      z-index: 10;
       @include respond(tab-land) {
         font-size: 6.5rem;
       }
@@ -55,13 +52,13 @@
       @include respond(phone) {
         font-size: 4.5rem;
       }
-      margin: 0.5rem 0 0 0;
       font-weight: 500;
+      margin: 0.5rem 0 0 0;
     }
     &-subtitle {
-      width: 100%;
-      text-align: center;
       font-size: 4.68rem;
+      text-align: center;
+      width: 100%;
       @include respond(tab-land) {
         font-size: 4.06rem;
       }
@@ -69,18 +66,17 @@
         font-size: 3rem;
       }
       @include respond(phone) {
-        font-size:3rem;
+        font-size: 3rem;
       }
-      margin: 0.2rem 0 1rem 0;
       font-weight: 500;
+      margin: 0.2rem 0 1rem 0;
     }
   }
-
   &__logo {
-    position: relative;
-    z-index: 1;
-    width: 17.3rem;
     padding: 0 1rem;
+    position: relative;
+    width: 17.3rem;
+    z-index: 1;
     @include respond(tab-land) {
       width: 15rem;
     }
@@ -90,16 +86,13 @@
     @include respond(phone) {
       width: 10rem;
     }
-    // width: 15vw;
-    // min-width: 10rem;
-    // max-width: 20rem;
     filter: drop-shadow(0vh 2vh 1.5vh black);
-    transition: transform 200ms ease-in-out;
     backface-visibility: hidden;
+    transition: transform 200ms ease-in-out;
     &:hover {
+      filter: drop-shadow(0vh 2.5vh 2vh black);
       transform: translateY(-0.4rem);
       transform: scale(1.05);
-      filter: drop-shadow(0vh 2.5vh 2vh black);
     }
   }
 }
