@@ -36,6 +36,11 @@ const Footer = () => {
                 <i className="fab fa-github" /> : zabiri/cafeberlin-tipshare
               </a>
             </li>
+            <li>
+              <a href="https://meganmcbride.squarespace.com">
+                <i className="fas fa-camera-retro" /> : Megan McBride
+              </a>
+            </li>
 
             <li>
               <a href="https://www.facebook.com/cafeberlincomo/">
