@@ -15,9 +15,9 @@ const GrossTips = props => {
         <input
           className="GrossTips__grossInput-input"
           name="grosstips"
-          step="0.01"
           onChange={props.changeGross}
           placeholder="Enter Gross tips"
+          step="0.01"
           type="tel"
           value={props.gross}
         />

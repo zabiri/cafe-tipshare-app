@@ -1,79 +1,85 @@
 import React, { Component } from "react";
-import AnimateOnChange from '../../components/AnimateOnChange/AnimateOnChange'
+import AnimateOnChange from "../../components/AnimateOnChange/AnimateOnChange";
 
-import Day from '../../components/Day/Day'
+import Day from "../../components/Day/Day";
 
 import "./Input.css";
 
 export class Input extends Component {
   state = {
     checkedRadio: "MTW",
-    previous: null,
+    previous: null
   };
   onTabChange = event => {
     this.setState({
-      previous: this.state.checkedRadio,
-      checkedRadio: event.target.value
+      checkedRadio: event.target.value,
+      previous: this.state.checkedRadio
     });
   };
 
   render() {
-
     return (
       <main className="Input">
         <div className="Input__tabs">
           <input
-          className="Input__tabs-radio"
-            value="MTW"
-            type="radio"
-            name="tabs"
-            id="toggle-tab1"
             checked={this.state.checkedRadio === "MTW"}
+            className="Input__tabs-radio"
+            id="toggle-tab1"
+            name="tabs"
             onChange={this.onTabChange}
+            type="radio"
+            value="MTW"
           />
-          <label className="Input__tabs-label" htmlFor="toggle-tab1">MTW</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab1">
+            MTW
+          </label>
 
           <input
-          className="Input__tabs-radio"
-            value="Thursday"
-            type="radio"
-            name="tabs"
-            id="toggle-tab2"
             checked={this.state.checkedRadio === "Thursday"}
+            className="Input__tabs-radio"
+            id="toggle-tab2"
+            name="tabs"
             onChange={this.onTabChange}
+            type="radio"
+            value="Thursday"
           />
-          <label className="Input__tabs-label" htmlFor="toggle-tab2">Thurs</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab2">
+            Thurs
+          </label>
 
           <input
-          className="Input__tabs-radio"
-            value="Friday"
-            type="radio"
-            name="tabs"
-            id="toggle-tab3"
             checked={this.state.checkedRadio === "Friday"}
+            className="Input__tabs-radio"
+            id="toggle-tab3"
+            name="tabs"
             onChange={this.onTabChange}
+            type="radio"
+            value="Friday"
           />
-          <label className="Input__tabs-label" htmlFor="toggle-tab3">Fri</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab3">
+            Fri
+          </label>
 
           <input
-          className="Input__tabs-radio"
-            value="Weekend"
-            type="radio"
-            name="tabs"
-            id="toggle-tab4"
             checked={this.state.checkedRadio === "Weekend"}
+            className="Input__tabs-radio"
+            id="toggle-tab4"
+            name="tabs"
             onChange={this.onTabChange}
+            type="radio"
+            value="Weekend"
           />
-          <label className="Input__tabs-label" htmlFor="toggle-tab4">Sat-Sun</label>
+          <label className="Input__tabs-label" htmlFor="toggle-tab4">
+            Sat-Sun
+          </label>
         </div>
         <div className="Input__panels">
           <AnimateOnChange
-            baseClassName="Poop"
-            animationClassName="fade-in"
             animate={this.state.checkedRadio.diff !== 0}
-            
+            animationClassName="fade-in"
+            baseClassName="Poop"
           >
-          <Day day={this.state.checkedRadio} key={this.state.checkedRadio}/>
+            <Day day={this.state.checkedRadio} key={this.state.checkedRadio} />
           </AnimateOnChange>
         </div>
       </main>
