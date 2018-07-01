@@ -186,6 +186,28 @@ template {
   to {
     opacity: 1; } }
 
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in; }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out; }
+  17% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .Footer {
   background-color: #333333;
   box-sizing: border-box;
@@ -253,6 +275,7 @@ template {
     animation: Gradient 10s ease infinite;
     background: linear-gradient(270deg, #4c49b2, #db4eb2, #fbfc79, #0eb7e1);
     background-size: 800% 800%;
+    backface-visibility: hidden;
     margin: 1.6rem 0 1rem 0;
     mask: url(../../assets/img/spatulas.png);
     mask-position: bottom center;
