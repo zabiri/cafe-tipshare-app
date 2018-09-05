@@ -77,7 +77,7 @@ export class Input extends Component {
           <AnimateOnChange
             animate={this.state.checkedRadio.diff !== 0}
             animationClassName="fade-in"
-            baseClassName="Poop"
+            baseClassName="aniInput"
           >
             <Day day={this.state.checkedRadio} key={this.state.checkedRadio} />
           </AnimateOnChange>
